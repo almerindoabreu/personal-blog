@@ -1,7 +1,12 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const LayoutWrapper = styled.section`
   display: flex;
+
+  ${media.lessThan("650px")`
+    flex-direction: column;
+  `}
 `
 
 export const LayoutMain = styled.main`
@@ -10,4 +15,8 @@ export const LayoutMain = styled.main`
   padding: 0 0 0 20rem;
   transition: #16202c, color 0.5s;
   width: 100%;
+
+  ${media.lessThan("650px")`
+    padding: 0rem 3rem 0rem 3rem;
+  `}
 `

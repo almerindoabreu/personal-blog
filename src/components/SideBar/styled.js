@@ -15,6 +15,14 @@ export const SideBarWrapper = styled.aside`
   width: 20rem;
 
   ${media.lessThan("830px")`
-    margin-top: 3rem;
+    margin-top: 2rem;
+  `}
+
+  ${media.lessThan("650px")`
+    margin-top: 2rem;
+    padding-bottom: 0rem;
+    height: auto;
+    position: static;
+    width:100%;
   `}
 `

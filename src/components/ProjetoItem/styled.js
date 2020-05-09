@@ -17,7 +17,6 @@ export const ProjetoItem = styled.div`
 `
 
 export const ProjetoItemMainImage = styled.img`
-  border: #fff solid 1px;
   min-height: 20rem;
   min-width: 20rem;
   max-height: 20rem;

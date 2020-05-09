@@ -5,6 +5,7 @@ description: And I'm not sure about the universe.
 category: Cheat Sheet
 background: "#7AAB13"
 keyWords: ReactJS, NodeJS, Arquitetura de Projeto
+image: "/assets/img/lake.jpg"
 ---
 
 # Lorem ipsum

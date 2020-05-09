@@ -10,7 +10,14 @@ const PostItem = props => {
         (
           {
             node: {
-              frontmatter: { category, date, description, title, keyWords },
+              frontmatter: {
+                category,
+                date,
+                description,
+                title,
+                keyWords,
+                image,
+              },
               timeToRead,
               fields: { slug },
             },
@@ -21,7 +28,7 @@ const PostItem = props => {
             <S.PostItem key={i}>
               <S.PostLink to={slug}>
                 <S.PostItemDivHeader>
-                  <S.PostItemMainImage></S.PostItemMainImage>
+                  <S.PostItemMainImage src={image} />
                   <S.PostItemTitle>{title}</S.PostItemTitle>
                 </S.PostItemDivHeader>
                 <S.PostItemDivSubTitle>
