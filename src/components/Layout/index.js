@@ -7,15 +7,15 @@ import GlobalStyles from "../../styles/global"
 
 import * as S from "./styled"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isPost = false }) => {
   return (
     <>
       <S.LayoutWrapper>
         <GlobalStyles />
-        <NavBar mode="mobile" />
-        <SideBar />
+        <NavBar mode="small" />
+        <SideBar isPost={isPost} />
         <S.LayoutMain>
-          <NavBar mode="desktop" />
+          <NavBar mode="large" />
           {children}
           <Footer />
         </S.LayoutMain>

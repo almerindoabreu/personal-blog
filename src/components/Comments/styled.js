@@ -1,9 +1,19 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const CommentsWrapper = styled.section`
   margin: auto;
   max-width: 70rem;
   padding: 3rem 6.4rem 3rem;
+
+  ${media.lessThan("830px")`
+    padding: 3rem 2.5rem 3rem;
+  `}
+
+  ${media.lessThan("650px")`
+    padding: 3rem 0rem 3rem;
+  `}
+  
   iframe[src*="ads-iframe"] {
     display: none;
   }

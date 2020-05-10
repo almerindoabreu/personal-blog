@@ -3,8 +3,8 @@ import Link from "gatsby-plugin-transition-link"
 import media from "styled-media-query"
 
 export const NavBarWrapper = styled.nav`
-  display: ${props => (props.mode == "desktop" ? "flex" : "none")};
-  flex-direction: row;
+  display: ${props => (props.mode == "large" ? "flex" : "none")};
+  flex-direction: column;
   justify-content: space-between;
   width: 75%;
   top: 0;
@@ -12,9 +12,13 @@ export const NavBarWrapper = styled.nav`
   background-color: #16202c;
 
   ${media.lessThan("830px")`
-    display: ${props => (props.mode == "mobile" ? "flex" : "none")};
+    display: ${props => (props.mode == "small" ? "flex" : "none")};
     z-index: 999;
     width: 100%;
+  `}
+
+  ${media.lessThan("530px")`
+    display: none;
   `}
 `
 
@@ -39,6 +43,12 @@ export const NavBarGroup = styled.div`
   ${media.lessThan("medium")`
     margin: 0.8rem 2rem 0.8rem auto;
   `}
+
+  ${media.lessThan("830px")`
+    z-index: 999;
+    width: 100%;
+  `}
+
 `
 
 export const MenuLinksList = styled.ul`

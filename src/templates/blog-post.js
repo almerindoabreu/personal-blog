@@ -13,7 +13,7 @@ const BlogPost = ({ data, pageContext }) => {
   const previous = pageContext.previousPost
 
   return (
-    <Layout>
+    <Layout isPost={true}>
       <SEO title={post.frontmatter.title} />
       <S.PostHeader>
         <S.PostDate>

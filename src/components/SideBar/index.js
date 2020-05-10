@@ -6,8 +6,8 @@ import SkillsExperience from "../SkillsExperience"
 
 import * as S from "./styled"
 
-const SideBar = () => (
-  <S.SideBarWrapper>
+const SideBar = ({ isPost }) => (
+  <S.SideBarWrapper isPost={isPost}>
     <Profile />
     <SocialLinks />
     <SkillsExperience />
