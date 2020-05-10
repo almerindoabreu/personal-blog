@@ -28,7 +28,9 @@ exports.createPages = ({ graphql, actions }) => {
 
   graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(posts)/.*.md$/" } }
+      ) {
         edges {
           node {
             fields {
@@ -100,7 +102,10 @@ exports.createPages = ({ graphql, actions }) => {
   graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "Artigo" } } }
+        filter: {
+          frontmatter: { category: { eq: "Artigo" } }
+          fileAbsolutePath: { regex: "/(posts)/.*.md$/" }
+        }
       ) {
         edges {
           node {
@@ -159,7 +164,10 @@ exports.createPages = ({ graphql, actions }) => {
   graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "Cheat Sheet" } } }
+        filter: {
+          frontmatter: { category: { eq: "Cheat Sheet" } }
+          fileAbsolutePath: { regex: "/(posts)/.*.md$/" }
+        }
       ) {
         edges {
           node {

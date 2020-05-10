@@ -34,6 +34,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/projects`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         // CommonMark mode (default: true)
@@ -64,6 +71,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-source-instance-name-for-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

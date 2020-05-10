@@ -27,6 +27,7 @@ export const PostTitle = styled.h1`
     `}
 
   ${media.lessThan("650px")`
+    font-size: 1.4rem;
     padding: 0 0rem;
   `}
 `
@@ -41,6 +42,7 @@ export const PostDescription = styled.h2`
   `}
 
   ${media.lessThan("650px")`
+  font-size: 1.2rem;
     padding: 0 0rem;
   `}
 `
@@ -51,6 +53,7 @@ export const PostDate = styled.p`
   padding: 0 1.4rem;
 
   ${media.lessThan("650px")`
+    font-size: 0.8rem;
     padding: 0 0rem;
   `}
 `
@@ -161,11 +164,19 @@ export const MainContent = styled.section`
     ${media.lessThan("830px")`
       font-size: 2.2rem;
     `}
+
+    ${media.lessThan("650px")`
+      font-size: 1.4rem;
+    `}
   }
   h2 {
     font-size: 2.1rem;
     ${media.lessThan("830px")`
       font-size: 1.7rem;
+    `}
+
+    ${media.lessThan("650px")`
+      font-size: 1.2rem;
     `}
   }
   h3 {
@@ -173,17 +184,29 @@ export const MainContent = styled.section`
     ${media.lessThan("830px")`
       font-size: 1.3rem;
     `}
+
+    ${media.lessThan("650px")`
+      font-size: 1rem;
+    `}
   }
   h4 {
     font-size: 1.4rem;
     ${media.lessThan("830px")`
       font-size: 1.1rem;
     `}
+
+    ${media.lessThan("650px")`
+      font-size: 0.8rem;
+    `}
   }
   h5 {
     font-size: 1.2rem;
     ${media.lessThan("830px")`
       font-size: 0.8rem;
+    `}
+
+    ${media.lessThan("650px")`
+      font-size: 0.6rem;
     `}
   }
   strong {
