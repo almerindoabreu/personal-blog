@@ -19,7 +19,7 @@ export const SideBarWrapper = styled.aside`
   `}
 
   ${media.lessThan("650px")`
-    display: ${props => (props.isPost == true ? "none" : "flex")};
+    display: ${props => (props.isPost === true ? "none" : "flex")};
     margin-top: 2rem;
     padding-bottom: 0rem;
     height: auto;

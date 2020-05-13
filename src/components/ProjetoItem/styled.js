@@ -21,7 +21,7 @@ export const ProjetoItem = styled.div`
 `
 
 export const ProjetoItemMainImage = styled.img`
-  display: ${props => (props.modo == "large" ? "block" : "none")};
+  display: ${props => (props.modo === "large" ? "block" : "none")};
   min-height: 20rem;
   min-width: 20rem;
   max-height: 20rem;
@@ -35,7 +35,7 @@ export const ProjetoItemMainImage = styled.img`
   `}
 
   ${media.lessThan("1000px")`
-    display: ${props => (props.modo == "small" ? "block" : "none")};
+    display: ${props => (props.modo === "small" ? "block" : "none")};
     padding: 1rem;
     max-width: 100%;
   `}

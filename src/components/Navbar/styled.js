@@ -3,7 +3,7 @@ import Link from "gatsby-plugin-transition-link"
 import media from "styled-media-query"
 
 export const NavBarWrapper = styled.nav`
-  display: ${props => (props.mode == "large" ? "flex" : "none")};
+  display: ${props => (props.mode === "large" ? "flex" : "none")};
   flex-direction: column;
   justify-content: space-between;
   width: 75%;
@@ -12,7 +12,7 @@ export const NavBarWrapper = styled.nav`
   background-color: #16202c;
 
   ${media.lessThan("830px")`
-    display: ${props => (props.mode == "small" ? "flex" : "none")};
+    display: ${props => (props.mode === "small" ? "flex" : "none")};
     z-index: 999;
     width: 100%;
   `}

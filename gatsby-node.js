@@ -23,10 +23,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 // To create the posts pages
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async function({ actions, graphql }) {
   const { createPage } = actions
 
-  graphql(`
+  await graphql(`
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(posts)/.*.md$/" } }
@@ -99,7 +99,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 
-  graphql(`
+  await graphql(`
     {
       allMarkdownRemark(
         filter: {
@@ -161,7 +161,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 
-  graphql(`
+  await graphql(`
     {
       allMarkdownRemark(
         filter: {
@@ -207,6 +207,7 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     const postsPerPage = 6
+
     const numPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, index) => {

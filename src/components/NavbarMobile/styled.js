@@ -12,7 +12,7 @@ export const NavbarMobileWrapper = styled.div`
   background-color: #16202c;
   flex-direction: row;
   ${media.lessThan("530px")`
-    display: ${props => (props.mode == "small" ? "flex" : "none")};
+    display: ${props => (props.mode === "small" ? "flex" : "none")};
     z-index: 9999;
   `}
 `
@@ -32,7 +32,7 @@ export const NavbarMobileIcon = styled(Menu)`
 `
 
 export const NavbarMobileMenu = styled.div`
-  display: ${props => (props.menu == true ? "flex" : "none")};
+  display: ${props => (props.menu === true ? "flex" : "none")};
   flex-direction: column;
   padding: 0rem 1rem 1rem 1rem;
   transition: 0.3s;
