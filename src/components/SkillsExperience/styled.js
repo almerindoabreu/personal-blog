@@ -19,7 +19,7 @@ export const TitleWrapper = styled.div`
   margin: 0.5rem;
 
   ${media.lessThan("medium")`
-    margin: 0.2rem 0.5rem;
+    margin: 0.2rem 0rem;
   `}
 `
 
@@ -32,15 +32,18 @@ export const SkillsExperienceShowMobile = styled.a`
 
   ${media.lessThan("medium")`
     display: block;
+    margin: 0.2rem 0rem;
   `}
 `
 
 export const SkillsExperienceShowIcon = styled(ChevronBottom)`
   display: ${props => (props.show != "visible" ? "none" : "block")};
+  cursor: pointer;
 `
 
 export const SkillsExperienceHiddenIcon = styled(ChevronTop)`
   display: ${props => (props.show != "visible" ? "none" : "block")};
+  cursor: pointer;
 `
 
 export const HelpSkillsCountLink = styled.a``
@@ -70,10 +73,14 @@ export const WrapperSkillsItens = styled.div`
   display: ${props => (props.show != "visible" ? "none" : "block")};
   width: 100%;
   margin: 0.5rem;
+
+  ${media.lessThan("medium")`
+    margin: 0.2rem 0rem;
+  `}
 `
 
 export const SkillItem = styled.div`
-  margin: 0.3rem;
+  margin: 0.3rem 0rem;
 `
 
 export const SkillsLabelWrapper = styled.div`

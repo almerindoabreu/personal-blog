@@ -1,0 +1,65 @@
+[33mcommit cf628f2f144fd9ccaa3f402ee8af2dc6d6e22523[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Sat May 16 14:54:29 2020 -0300
+
+    improvement of style layout
+
+[33mcommit b760def7b88cac5900afee8ee6b03492b2eff539[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Sat May 16 11:49:39 2020 -0300
+
+    Adapt skills component
+
+[33mcommit 726349aaeca55df01663e6c8f6e888b4448be55b[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Sat May 16 11:19:50 2020 -0300
+
+    Keywords include
+
+[33mcommit 0b215f65a6144cf2973d8836bd6143e2d98c7783[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Tue May 12 22:46:10 2020 -0300
+
+    Add comments Disqus account
+
+[33mcommit 0dd3e1cd96ed8bc1fe7b0f78a12f521c2fe235e3[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Tue May 12 22:18:01 2020 -0300
+
+    #fix bug of  case-sensitivity issue
+
+[33mcommit 4872c9c8c58959a2da2f2ec19c4bc7837721c20f[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Mon May 11 00:56:45 2020 -0300
+
+    Exclusão de arquivos estavam em lugares errados
+
+[33mcommit 9ac6a8c06d660fec2ec165db2a3fd7be7b17028d[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Sun May 10 18:38:11 2020 -0300
+
+    Responsive Project
+
+[33mcommit 6aabd7678bc0806aaff89c7f4bd0a541346ad2f5[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Sun May 10 14:43:20 2020 -0300
+
+    Resposive components (Posts, Comments and others)
+
+[33mcommit bd365e0dbc32cdb8f77941f6720dec9601d5e87c[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Sat May 9 19:29:47 2020 -0300
+
+    Include image post in postitem
+
+[33mcommit 9f3de1a8d015cdbf23e2ad57c902a717a6e7d6ff[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Mon May 4 23:04:52 2020 -0300
+
+    Comitando like a boss
+
+[33mcommit 19eccd4d5446c6a308e5b6a08a0fb2f4b1e21ebc[m
+Author: Almerindo Abreu <almerindo.neto@gmail.com>
+Date:   Mon Apr 6 21:19:30 2020 -0300
+
+    Initial commit from gatsby: (https://github.com/gatsbyjs/gatsby-starter-default.git)

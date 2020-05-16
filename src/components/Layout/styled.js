@@ -17,6 +17,6 @@ export const LayoutMain = styled.main`
   width: 100%;
 
   ${media.lessThan("650px")`
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 0rem 1rem;
   `}
 `
