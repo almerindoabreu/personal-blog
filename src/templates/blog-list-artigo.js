@@ -47,6 +47,7 @@ export const query = graphql`
           }
           frontmatter {
             background
+            keyWords
             category
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             description
