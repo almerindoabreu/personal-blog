@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import skills from "./content"
 import ModalCalculoSkills from "../ModalCalculoSkills"
@@ -8,6 +8,14 @@ import * as S from "./styled"
 
 const SkillsExperience = () => {
   const [showSkills, setShowSkills] = useState(true)
+
+  useEffect(() => {
+    const verifySizeOfScreen = () => {
+      if (window.innerWidth <= 550) setShowSkills(false)
+    }
+
+    verifySizeOfScreen()
+  }, [])
 
   const handleShowSkills = () => {
     setShowSkills(!showSkills)
@@ -29,7 +37,7 @@ const SkillsExperience = () => {
           <S.HelpSkillsCountIcon />
         </S.HelpSkillsCountLink>
       </S.TitleWrapper>
-      <S.WrapperSkillsItens show={showSkills == false ? "visible" : "hidden"}>
+      <S.WrapperSkillsItens show={showSkills == true ? "visible" : "hidden"}>
         {skills.map((skill, i) => (
           <S.SkillItem key={i}>
             <S.SkillsLabelWrapper>
@@ -42,7 +50,7 @@ const SkillsExperience = () => {
           </S.SkillItem>
         ))}
       </S.WrapperSkillsItens>
-      <S.MoreSkills show={showSkills == false ? "visible" : "hidden"}>
+      <S.MoreSkills show={showSkills == true ? "visible" : "hidden"}>
         <S.MoreSkillsLink href="/moreSkills" alt="Mais skills">
           Mais Skills ...
         </S.MoreSkillsLink>
