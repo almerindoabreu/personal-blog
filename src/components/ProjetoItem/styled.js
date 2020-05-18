@@ -273,7 +273,7 @@ export const ProjetoItemDescription = styled.section`
 `
 export const ProjetoLinksWrapper = styled.div``
 
-export const ProjetoLink = styled(Link)`
+export const ProjetoLink = styled.a`
   padding: 0.8rem;
   color: #42a5f5;
   font-size: 0.9rem;

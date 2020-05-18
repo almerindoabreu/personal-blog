@@ -4,7 +4,12 @@ import * as S from "./styled"
 const ProjetoItem = ({ projetos }) => {
   const artigoLink = paper => {
     const haveArtigo = paper ? true : false
-    if (haveArtigo) return <S.ProjetoLink to={paper}>Artigo</S.ProjetoLink>
+    if (haveArtigo)
+      return (
+        <S.ProjetoLink href={paper} target="_blank">
+          Artigo
+        </S.ProjetoLink>
+      )
   }
 
   return (
@@ -43,7 +48,9 @@ const ProjetoItem = ({ projetos }) => {
                 <div dangerouslySetInnerHTML={{ __html: html }}></div>
               </S.ProjetoItemDescription>
               <S.ProjetoLinksWrapper>
-                <S.ProjetoLink to={readMe}>Read Me</S.ProjetoLink>
+                <S.ProjetoLink href={readMe} target="_blank">
+                  Read Me
+                </S.ProjetoLink>
                 {artigoLink(paper)}
               </S.ProjetoLinksWrapper>
             </S.ProjetoContentWrapper>
