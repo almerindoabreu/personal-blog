@@ -27,10 +27,10 @@ const SkillsExperience = () => {
         <S.SkillsExperienceTitle>Skills</S.SkillsExperienceTitle>
         <S.SkillsExperienceShowMobile onClick={() => handleShowSkills()}>
           <S.SkillsExperienceShowIcon
-            show={showSkills == true ? "visible" : "hidden"}
+            show={showSkills == false ? "visible" : "hidden"}
           />
           <S.SkillsExperienceHiddenIcon
-            show={showSkills == false ? "visible" : "hidden"}
+            show={showSkills == true ? "visible" : "hidden"}
           />
         </S.SkillsExperienceShowMobile>
         <S.HelpSkillsCountLink>
