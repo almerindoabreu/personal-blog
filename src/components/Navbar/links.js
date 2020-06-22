@@ -17,7 +17,7 @@ const links = [
   },
   {
     url: "/search",
-    label: "Pesqusiar",
+    label: "Pesquisar",
   },
 ]
 
