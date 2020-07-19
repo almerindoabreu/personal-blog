@@ -3,6 +3,7 @@ date: 2020-05-10 19:00:00
 title: Meu site e blog pessoal
 keyWords: ReactJS, Gatsby
 readMe: "https://github.com/almerindoabreu/personal-blog"
+category: "Projeto"
 paper: ""
 image: "/assets/img/Página Principal.png"
 ---
