@@ -7,13 +7,13 @@ export const NavBarWrapper = styled.nav`
   flex-direction: column;
   justify-content: space-between;
   width: 75%;
+  z-index: 10;
   top: 0;
   position: fixed;
   background-color: #16202c;
 
   ${media.lessThan("830px")`
     display: ${props => (props.mode === "small" ? "flex" : "none")};
-    z-index: 999;
     width: 100%;
   `}
 
@@ -45,7 +45,7 @@ export const NavBarGroup = styled.div`
   `}
 
   ${media.lessThan("830px")`
-    z-index: 999;
+    z-index: 10;
     width: 100%;
   `}
 

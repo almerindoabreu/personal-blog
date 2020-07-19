@@ -3,12 +3,14 @@ import React, { useState, useEffect } from "react"
 import skills from "./content"
 import ModalCalculoSkills from "../ModalCalculoSkills"
 import ModalExtratoSkill from "../ModalExtratoSkill"
+import Modal from "../Modal"
 
 import * as S from "./styled"
 
 const SkillsExperience = () => {
   const [showSkills, setShowSkills] = useState(true)
-
+  const [modalCalculoSkills, setModalCalculoSkills] = useState(false)
+  
   useEffect(() => {
     const verifySizeOfScreen = () => {
       if (window.innerWidth <= 550) setShowSkills(false)
@@ -21,7 +23,12 @@ const SkillsExperience = () => {
     setShowSkills(!showSkills)
   }
 
+  const openModalCalculoSkills = () => {
+    setModalCalculoSkills(!modalCalculoSkills);
+  }
+
   return (
+    <>
     <S.WrapperSkillsExperience>
       <S.TitleWrapper>
         <S.SkillsExperienceTitle>Skills</S.SkillsExperienceTitle>
@@ -33,7 +40,7 @@ const SkillsExperience = () => {
             show={showSkills == true ? "visible" : "hidden"}
           />
         </S.SkillsExperienceShowMobile>
-        <S.HelpSkillsCountLink>
+        <S.HelpSkillsCountLink onClick={() => openModalCalculoSkills()}>
           <S.HelpSkillsCountIcon />
         </S.HelpSkillsCountLink>
       </S.TitleWrapper>
@@ -55,7 +62,11 @@ const SkillsExperience = () => {
           Mais Skills ...
         </S.MoreSkillsLink>
       </S.MoreSkills>
-    </S.WrapperSkillsExperience>
+    </S.WrapperSkillsExperience >
+      <Modal show={modalCalculoSkills} handleClose={openModalCalculoSkills}>
+        <ModalCalculoSkills />
+      </Modal>
+    </>
   )
 }
 
