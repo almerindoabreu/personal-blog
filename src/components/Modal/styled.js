@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import media from "styled-media-query"
+
 
 export const ModalWrapper = styled.div`
     display: ${props => (props.show ? "block": "none")};
@@ -6,6 +8,12 @@ export const ModalWrapper = styled.div`
     z-index: 5;
     top: 50%;
     left: 50%;
+
+    ${media.lessThan("650px")`
+      top: 50%;
+      left: 5%;
+      right: 5%;
+    `}
 `
 
 export const ModalBlur = styled.div`
@@ -46,5 +54,9 @@ export const ModalButton = styled.button`
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  
+
+    ${media.lessThan("650px")`
+      left: 0%;
+
+    `}
   `
