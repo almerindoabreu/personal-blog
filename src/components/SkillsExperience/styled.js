@@ -48,6 +48,7 @@ export const SkillsExperienceHiddenIcon = styled(ChevronTop)`
 
 export const HelpSkillsCountLink = styled.a`
   cursor: pointer;
+  display: ${props => (props.show != "visible" ? "none" : "block")};
 `
 
 export const HelpSkillsCountIcon = styled(HelpWithCircle)`

@@ -9,11 +9,11 @@ import Modal from "../Modal"
 
 import * as S from "./styled"
 
-const SkillsExperience = () => {
+const SkillsExperience = ({ moreSkillsLink = true, countLine = 0 }) => {
   
   const [showSkills, setShowSkills] = useState(true)
   const [modalCalculoSkills, setModalCalculoSkills] = useState(false)
-  const [maxExperienceSkills, setMaxExperienceSkills] = useState(0);
+  const [maxExperienceSkills, setMaxExperienceSkills] = useState(countLine);
   const [countLineSkills, setCountLineSkills] = useState(12);
   const [skills, setSkills] = useState([]);
 
@@ -154,7 +154,7 @@ const SkillsExperience = () => {
             show={showSkills == true ? "visible" : "hidden"}
           />
         </S.SkillsExperienceShowMobile>
-        <S.HelpSkillsCountLink onClick={() => openModalCalculoSkills()}>
+        <S.HelpSkillsCountLink onClick={() => openModalCalculoSkills()} show={(showSkills && moreSkillsLink) == true ? "visible" : "hidden"}>
           <S.HelpSkillsCountIcon />
         </S.HelpSkillsCountLink>
       </S.TitleWrapper>
@@ -176,7 +176,7 @@ const SkillsExperience = () => {
         }
         )}
       </S.WrapperSkillsItens>
-      <S.MoreSkills show={showSkills == true ? "visible" : "hidden"}>
+      <S.MoreSkills show={(showSkills && moreSkillsLink) == true ? "visible" : "hidden"}>
         <S.MoreSkillsLink href="/moreSkills" alt="Mais skills">
           Mais Skills ...
         </S.MoreSkillsLink>
