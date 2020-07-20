@@ -9,12 +9,12 @@ import Modal from "../Modal"
 
 import * as S from "./styled"
 
-const SkillsExperience = ({ moreSkillsLink = true, countLine = 0 }) => {
+const SkillsExperience = ({ moreSkillsLink = true, countLine = 6 }) => {
   
   const [showSkills, setShowSkills] = useState(true)
   const [modalCalculoSkills, setModalCalculoSkills] = useState(false)
-  const [maxExperienceSkills, setMaxExperienceSkills] = useState(countLine);
-  const [countLineSkills, setCountLineSkills] = useState(12);
+  const [maxExperienceSkills, setMaxExperienceSkills] = useState(0);
+  const [countLineSkills, setCountLineSkills] = useState(countLine);
   const [skills, setSkills] = useState([]);
 
   const data = useStaticQuery(graphql`
@@ -38,7 +38,7 @@ const SkillsExperience = ({ moreSkillsLink = true, countLine = 0 }) => {
   useEffect(() => {
     const verifySizeOfScreen = () => {
       if (window.innerWidth <= 550) setShowSkills(false)
-      if (window.innerHeight <= 660) setCountLineSkills(6);
+      if (window.innerHeight >= 900) setCountLineSkills(countLine > 12 ? countLine : 12);
     }
     getSkills(contents);
     
