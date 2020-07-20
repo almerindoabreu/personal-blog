@@ -3,9 +3,9 @@ const queries = require("./src/utils/algolia_queries")
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Blog - Almerindo Abreu`,
+    description: `Este blog é um ambiente na qual irei postar artigos sobre conteúdos dos quais estarei estudando e projetos que estarei trabalhando. A idéia é propor reflexão sobre esses temas e aprendizado para as pessoas que tiverem interesse.`,
+    author: `@almerindoabreu`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
