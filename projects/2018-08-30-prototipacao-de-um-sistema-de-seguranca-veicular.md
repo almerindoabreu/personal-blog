@@ -3,6 +3,7 @@ date: 2018-08-30 18:54:23
 title: Prototipação de um Sistema de Segurança Veicular para alertas contra o sono e cansaço via reconhecimento de imagens
 keyWords: Python, Dlib, OpenCV, Segurança Veicular
 readMe: "https://github.com/almerindoabreu/SegurancaVeicular"
+category: Projeto
 paper: ""
 image: "http://www.fsma.edu.br/site/wp-content/uploads/2018/03/pp13.jpg"
 ---
