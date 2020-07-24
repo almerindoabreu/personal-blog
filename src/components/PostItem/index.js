@@ -31,26 +31,18 @@ const PostItem = props => {
                 <S.PostLink to={slug}>
                   <S.PostItemWrapperGroup>
                     <S.PostItemGroup>
-                    <S.PostItemGroup>
                           <S.PostItemTitle>{title}</S.PostItemTitle>
-                      </S.PostItemGroup>
-                      <S.PostItemGroup>
+                          <S.PostItemSubTitle>{description}</S.PostItemSubTitle>
                         <S.PostItemlabelFooter>
                           <S.PostItemIconPurchaseTag />{category + " • " + keyWords}
                         </S.PostItemlabelFooter>
                         <S.PostItemlabelFooter>
                           <S.PostItemIconTimeFive /> {date + " • " + timeToRead + " min de leitura"}
                         </S.PostItemlabelFooter>
-                      </S.PostItemGroup>
+                    </S.PostItemGroup>
                       <S.PostItemImage>
                           <S.PostItemMainImage src={image} />
                       </S.PostItemImage>
-
-                      <S.PostItemGroup>
-                          <S.PostItemSubTitle>{description}</S.PostItemSubTitle>
-                      </S.PostItemGroup>
-
-                    </S.PostItemGroup>
                   </S.PostItemWrapperGroup>
                 </S.PostLink>
               </S.PostItem>
