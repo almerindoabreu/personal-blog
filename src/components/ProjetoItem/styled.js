@@ -76,7 +76,6 @@ export const ProjetoItemInfo = styled.div`
 `
 
 export const ProjetoItemDescription = styled.section`
-  margin: auto;
   max-width: 70rem;
   padding: 2rem 0rem;
 
