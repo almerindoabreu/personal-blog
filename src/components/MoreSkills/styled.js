@@ -41,7 +41,7 @@ export const MoreSkillsTitle = styled.h1`
 export const MoreSkillsText = styled.p`
     font-weight: 600;
     margin: 1.5rem 0px 0.5rem;
-    color: white;
+    color: var(--texts);
 
     text-align: left;
     font-weight: 300;

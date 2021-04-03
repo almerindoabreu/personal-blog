@@ -10,7 +10,7 @@ export const NavBarWrapper = styled.nav`
   z-index: 10;
   top: 0;
   position: fixed;
-  background-color: #16202c;
+  background-color: var(--background);
 
   ${media.lessThan("830px")`
     display: ${props => (props.mode === "small" ? "flex" : "none")};
@@ -23,8 +23,8 @@ export const NavBarWrapper = styled.nav`
 `
 
 export const NavBarGroup = styled.div`
-  color: #fff;
-  margin: 0.8rem;
+  color: var(--texts);
+  margin: 0.5rem 0.8rem;
   margin-left: auto;
   margin-right: 1rem;
 
@@ -57,6 +57,8 @@ export const MenuLinksList = styled.ul`
 
 export const NavBarLinkItem = styled.li`
   float: left;
+  margin-top: 7px;
+
   .active {
     border-bottom: #42a5f5 solid 3px;
   }
@@ -64,7 +66,7 @@ export const NavBarLinkItem = styled.li`
 
 export const NavBarLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: var(--texts);
   padding: 0.3rem;
   cursor: pointer;
   margin: 0.8rem;

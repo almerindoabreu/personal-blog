@@ -9,7 +9,7 @@ export const NavbarMobileWrapper = styled.div`
   padding: 0.5rem 1rem;
   position: fixed;
   width: 100%;
-  background-color: #16202c;
+  background-color: var(--background);
   flex-direction: row;
   ${media.lessThan("530px")`
     display: ${props => (props.mode === "small" ? "flex" : "none")};
@@ -20,7 +20,7 @@ export const NavbarMobileWrapper = styled.div`
 export const NavbarMobile = styled.nav``
 
 export const NavbarMobileIconWrapper = styled.button`
-  background-color: #16202c;
+  background-color: var(--background);
   border: none;
   cursor: pointer;
 `
@@ -28,7 +28,7 @@ export const NavbarMobileIconWrapper = styled.button`
 export const NavbarMobileIcon = styled(Menu)`
   width: 30px;
   height: 30px;
-  color: #fff;
+  color: var(--texts);;
 `
 
 export const NavbarMobileMenu = styled.div`
@@ -44,7 +44,7 @@ export const NavbarMobileLinkList = styled.ul`
 `
 
 export const NavbarMobileItem = styled.li`
-  color: #fff;
+  color: var(--texts);
 
   .active {
     border-bottom: #42a5f5 solid 3px;
@@ -53,7 +53,7 @@ export const NavbarMobileItem = styled.li`
 
 export const NavbarMobileLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: var(--texts);
   cursor: pointer;
   transition: 0.3s;
   &:hover {

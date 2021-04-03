@@ -2,7 +2,7 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const ProfileWrapper = styled.section`
-  color: #fff;
+  color: var(--texts);;
 
   display: flex;
   flex-direction: column;

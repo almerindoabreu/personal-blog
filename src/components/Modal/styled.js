@@ -47,7 +47,7 @@ export const ModalButton = styled.button`
   export const ModalSection = styled.section`
     padding: 10px 10px 15px;
     position: relative;
-    background: #16202c;
+    background: var(--background);
     left: -50%;
     width: 100%;
     height: auto;

@@ -20,7 +20,7 @@ export const SocialLinksList = styled.ul`
 export const SocialLinksItem = styled.li``
 
 export const SocialLinksLink = styled.a`
-  color: #fff;
+  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
 `

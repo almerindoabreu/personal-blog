@@ -7,7 +7,7 @@ import media from "styled-media-query"
 export const WrapperSkillsExperience = styled.div`
   display: flex;
   flex-direction: column;
-  background: #16202c;
+  background: var(--background);
   width: 100%;
 `
 
@@ -26,7 +26,7 @@ export const TitleWrapper = styled.div`
 export const SkillsExperienceShowMobile = styled.a`
   display: none;
   margin-top: 5px;
-  color: #fff;
+  color: var(--texts);
   height: 15px;
   width: 15px;
 
@@ -53,7 +53,7 @@ export const HelpSkillsCountLink = styled.a`
 
 export const HelpSkillsCountIcon = styled(HelpWithCircle)`
   margin-top: 5px;
-  color: #fff;
+  color: var(--texts);
   height: 15px;
   width: 15px;
 
@@ -93,12 +93,12 @@ export const SkillsLabelWrapper = styled.div`
 `
 
 export const SkillLabel = styled.label`
-  color: #fff;
+  color: var(--texts);
   font-size: 0.9rem;
 `
 
 export const SkillBar = styled.div`
-  background-color: #fff;
+  background-color: var(--texts);
   width: ${props => props.experiencePorcent}%;
   height: 10px;
 `

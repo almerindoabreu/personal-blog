@@ -4,7 +4,7 @@ import media from "styled-media-query"
 export const SideBarWrapper = styled.aside`
   align-items: center;
   border-right: 1px solid;
-  background: #16202c;
+  background: var(--background);
   display: flex;
 
   flex-direction: column;

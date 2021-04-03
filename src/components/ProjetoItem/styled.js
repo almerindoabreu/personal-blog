@@ -16,7 +16,7 @@ export const ProjetoItem = styled.div`
   display: flex;
   width: 100%;
   flex-direction: row;
-  color: #fff;
+  color: var(--texts);
   padding: 1rem;
   margin-bottom: 2rem;
 
@@ -71,7 +71,7 @@ export const ProjetoItemTitle = styled.h1`
 
 export const ProjetoItemInfo = styled.div`
   margin: 0rem 1rem;
-  color: #fff;
+  color: var(--texts);
   font-size: 1rem;
 `
 
@@ -97,7 +97,7 @@ export const ProjetoItemDescription = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: #fff;
+    color: var(--texts);
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.7;
@@ -156,7 +156,7 @@ export const ProjetoItemDescription = styled.section`
     width: 100%;
   }
   blockquote {
-    color: #fff;
+    color: var(--texts);
     border-left: 0.3rem solid #1fa1f2;
     padding: 0 1.875rem;
     margin: 3.125rem auto;
@@ -263,7 +263,7 @@ export const ProjetoItemDescription = styled.section`
     text-decoration: none;
     transition: opacity 0.5s;
     svg {
-      color: #fff;
+      color: var(--texts);
     }
     &:hover {
       opacity: 0.8;

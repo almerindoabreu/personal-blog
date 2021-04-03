@@ -4,7 +4,7 @@ import Link from "gatsby-plugin-transition-link"
 export const WrapperPagination = styled.div`
   display: flex;
   flex-direction: row;
-  color: #fff;
+  color: var(--texts);
   justify-content: space-between;
   padding: 0.8rem 1.8rem;
 `
@@ -21,5 +21,5 @@ export const WrapperPaginationMovePage = styled.div`
 
 export const PaginationMovePage = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: var(--texts);
 `

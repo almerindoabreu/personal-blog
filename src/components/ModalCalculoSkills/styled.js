@@ -9,7 +9,7 @@ export const ModalCalculoSkillsWrapper = styled.div`
     padding: 1rem;
     margin: auto;
 
-    background: #16202c;
+    background: var(--background);
 `
 
 export const ModalCalculoSkillsTitle = styled.h1`
@@ -26,7 +26,7 @@ export const ModalCalculoSkillsTitle = styled.h1`
 export const ModalCalculoSkillsDescription = styled.p`
     font-weight: 600;
     margin: 1.5rem 0px 0.5rem;
-    color: white;
+    color: var(--texts);
 
     text-align: left;
     font-weight: 300;

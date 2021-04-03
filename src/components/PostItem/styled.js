@@ -20,7 +20,7 @@ export const PostItemWrapper = styled.div`
 export const PostItem = styled.div`
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: var(--texts);
   padding: 1rem;
 
   ${media.greaterThan("1800px")`
@@ -39,7 +39,7 @@ export const PostItem = styled.div`
 
 export const PostLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: var(--texts);
   height: 100%;
 `
 
