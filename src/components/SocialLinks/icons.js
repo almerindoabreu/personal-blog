@@ -1,12 +1,12 @@
 import { Github } from "@styled-icons/boxicons-logos/Github"
-import { Whatsapp } from "@styled-icons/boxicons-logos/Whatsapp"
+import { Email } from "@styled-icons/evaicons-solid/Email"
 import { Linkedin } from "@styled-icons/boxicons-logos/Linkedin"
 import { Pinterest } from "@styled-icons/boxicons-logos/Pinterest"
 import { Playstation } from "@styled-icons/remix-fill/Playstation"
 
 const Icons = {
   Github,
-  Whatsapp,
+  Email,
   Linkedin,
   Pinterest,
   Playstation,

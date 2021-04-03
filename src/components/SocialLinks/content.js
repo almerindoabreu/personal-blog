@@ -4,8 +4,8 @@ const links = [
     url: "https://github.com/almerindoabreu",
   },
   {
-    label: "Whatsapp",
-    url: "http://api.whatsapp.com/send?1=pt_BR&phone=5522996141427",
+    label: "Email",
+    url: "mailto:almerindo.neto@gmail.com",
   },
   {
     label: "Linkedin",
