@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Link from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 
 export const ProjetoItemWrapper = styled.div`

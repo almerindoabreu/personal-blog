@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Link from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 
 import { TimeFive } from "@styled-icons/boxicons-solid/TimeFive"
@@ -37,7 +37,7 @@ export const PostItem = styled.div`
 
 `
 
-export const PostLink = styled(Link)`
+export const PostLink = styled(AniLink)`
   text-decoration: none;
   color: var(--texts);
   height: 100%;

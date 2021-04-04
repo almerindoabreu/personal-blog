@@ -1,7 +1,6 @@
 import React from "react"
 import * as S from "./styled"
-
-import { TimeFive } from "@styled-icons/boxicons-solid/TimeFive"
+import getThemeColor from "../../utils/getThemeColor"
 
 const PostItem = props => {
   const postList = props.postList
@@ -28,7 +27,13 @@ const PostItem = props => {
         ) => {
           return (
               <S.PostItem key={i}>
-                <S.PostLink to={slug}>
+                <S.PostLink 
+                to={slug}
+                cover
+                direction="down"
+                bg={getThemeColor()}
+                duration={0.6}
+                >
                   <S.PostItemWrapperGroup>
                     <S.PostItemGroup>
                           <S.PostItemTitle>{title}</S.PostItemTitle>

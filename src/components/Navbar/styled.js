@@ -1,13 +1,14 @@
 import styled from "styled-components"
-import Link from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 
 export const NavBarWrapper = styled.nav`
   display: ${props => (props.mode === "large" ? "flex" : "none")};
   flex-direction: column;
   justify-content: space-between;
-  width: 75%;
+  width: 100%;
   z-index: 10;
+  padding-right: 50px;
   top: 0;
   position: fixed;
   background-color: var(--background);
@@ -64,7 +65,7 @@ export const NavBarLinkItem = styled.li`
   }
 `
 
-export const NavBarLink = styled(Link)`
+export const NavBarLink = styled(AniLink)`
   text-decoration: none;
   color: var(--texts);
   padding: 0.3rem;

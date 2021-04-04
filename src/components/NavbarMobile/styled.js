@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Link from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 
 import { Menu } from "@styled-icons/entypo/Menu"
@@ -51,7 +51,7 @@ export const NavbarMobileItem = styled.li`
   }
 `
 
-export const NavbarMobileLink = styled(Link)`
+export const NavbarMobileLink = styled(AniLink)`
   text-decoration: none;
   color: var(--texts);
   cursor: pointer;

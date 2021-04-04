@@ -3,6 +3,7 @@ import { HelpWithCircle } from "@styled-icons/entypo/HelpWithCircle"
 import { ChevronBottom } from "@styled-icons/open-iconic/ChevronBottom"
 import { ChevronTop } from "@styled-icons/open-iconic/ChevronTop"
 import media from "styled-media-query"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const WrapperSkillsExperience = styled.div`
   display: flex;
@@ -108,7 +109,7 @@ export const MoreSkills = styled.div`
   text-align: right;
 `
 
-export const MoreSkillsLink = styled.a`
+export const MoreSkillsLink = styled(AniLink)`
   color: #42a5f5;
   font-size: 0.9rem;
   text-decoration: none;

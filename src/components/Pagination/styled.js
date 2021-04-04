@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Link from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const WrapperPagination = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export const WrapperPaginationMovePage = styled.div`
   flex-direction: row;
 `
 
-export const PaginationMovePage = styled(Link)`
+export const PaginationMovePage = styled(AniLink)`
   text-decoration: none;
   color: var(--texts);
 `

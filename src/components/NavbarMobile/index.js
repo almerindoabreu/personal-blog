@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 
 import * as S from "./styled"
+import getThemeColor from "../../utils/getThemeColor"
 
 const NavBarMobile = ({ links, mode }) => {
   const [menuOn, setMenuOn] = useState(false)
@@ -22,6 +23,10 @@ const NavBarMobile = ({ links, mode }) => {
                 <S.NavbarMobileLink
                   activeClassName="active"
                   to={link.url}
+                  cover
+                  direction="down"
+                  bg={getThemeColor()}
+                  duration={0.6}
                   onClick={() => handleMenu()}
                 >
                   {link.label}
