@@ -1,17 +1,11 @@
 import React, { useState } from "react";
 import * as S from "./styled"
 
-import dayIcon from "../../images/day.svg";
-import nightIcon from "../../images/night.svg";
-
-import getThemeColor from "../../utils/getThemeColor"
-
 const NightMode = (props) => {
-  const [nightMode, setNightMode] = useState(true);
 
   const activeNightMode = (mode) => {
-    setNightMode(mode);
-    window.__setPreferredTheme(props.isDarkMode ? "light" : "dark");
+    props.setNightMode(mode);
+    window.__setPreferredTheme(mode ? "dark" : "light");
     console.log("setNightMode(!nightMode);")
   }
 
