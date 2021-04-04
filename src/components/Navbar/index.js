@@ -7,14 +7,14 @@ import NightMode from "../NightMode"
 
 import getThemeColor from "../../utils/getThemeColor"
 
-const NavBar = ({ mode }) => {
+const NavBar = ({ mode, setNightMode }) => {
   const [theme, setTheme] = useState(null)
 
   const isDarkMode = theme === "dark"
 
   useEffect(() => {
     setTheme(window.__theme)
-
+    setNightMode(isDarkMode);
     window.__onThemeChange = () => setTheme(window.__theme)
   }, [])
 
@@ -26,13 +26,20 @@ const NavBar = ({ mode }) => {
         <S.MenuLinksList >
           {links.map((link, i) => (
             <S.NavBarLinkItem>
-              <S.NavBarLink activeClassName="active" to={link.url}>
+              <S.NavBarLink 
+                activeClassName="active"
+                to={link.url}
+                cover
+                direction="down"
+                bg={getThemeColor()}
+                duration={0.6}
+                >
                 {link.label}
               </S.NavBarLink>
               
             </S.NavBarLinkItem>
           ))}
-          <NightMode isDarkMode={isDarkMode}/>
+          <NightMode isDarkMode={isDarkMode} setNightMode={setNightMode}/>
         </S.MenuLinksList>
       </S.NavBarGroup>
     </S.NavBarWrapper>
