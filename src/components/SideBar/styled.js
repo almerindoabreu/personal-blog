@@ -3,7 +3,6 @@ import media from "styled-media-query"
 
 export const SideBarWrapper = styled.aside`
   align-items: center;
-  border-right: 1px solid;
   background: var(--background);
   display: flex;
 

@@ -6,9 +6,9 @@ import SkillsExperience from "../SkillsExperience"
 
 import * as S from "./styled"
 
-const SideBar = ({ isPost }) => (
+const SideBar = ({ isPost, isDarkMode }) => (
   <S.SideBarWrapper isPost={isPost}>
-    <Profile />
+    <Profile isDarkMode={isDarkMode}/>
     <SocialLinks />
     <SkillsExperience />
   </S.SideBarWrapper>
