@@ -65,10 +65,12 @@ const GlobalStyles = createGlobalStyle`
   body.dark {
     --borders: #38444d;
     --texts: #fff;
+    --textsHover: #000;
     --postColor: #fff;
     --highlight: #1fa1f2;
     --mediumBackground: #38444d;
     --background: #16202c;
+    --backgroundHover: #fff;
     --white: #fff;
     --black: #222;
   }
@@ -76,9 +78,11 @@ const GlobalStyles = createGlobalStyle`
     --borders: #dedede;
     --postColor: #111;
     --texts: #000;
+    --textsHover: #fff;
     --highlight: #1fa1f2;
     --mediumBackground: #f0f0f3;
     --background: #fff;
+    --backgroundHover: #16202c;
     --white: #fff;
     --black: #222;
   }
