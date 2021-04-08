@@ -20,7 +20,6 @@ const NavBar = ({ mode, setNightMode }) => {
 
   return (
     <>
-    <NavbarMobile links={links} mode={mode} />
     <S.NavBarWrapper mode={mode}>
       <S.NavBarGroup>
         <S.MenuLinksList >

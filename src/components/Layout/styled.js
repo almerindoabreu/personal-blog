@@ -3,8 +3,9 @@ import media from "styled-media-query"
 
 export const LayoutWrapper = styled.section`
   display: flex;
+  position: relative;
 
-  ${media.lessThan("650px")`
+  ${media.lessThan("750px")`
     flex-direction: column;
   `}
 `
@@ -21,7 +22,7 @@ export const LayoutMain = styled.main`
   transition: var(--background), color 0.5s;
   width: 100%;
 
-  ${media.lessThan("650px")`
+  ${media.lessThan("750px")`
     padding: 0rem 1rem;
   `}
 `

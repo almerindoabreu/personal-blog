@@ -26,7 +26,7 @@ export const ProfileTitle = styled.small`
   display: block;
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   ${media.lessThan("medium")`
     font-size: 0.8rem;

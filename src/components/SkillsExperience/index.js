@@ -8,7 +8,7 @@ import Modal from "../Modal"
 
 import * as S from "./styled"
 
-const SkillsExperience = ({ moreSkillsLink = true, countLine = 6 }) => {
+const SkillsExperience = ({ moreSkillsLink = true, countLine = 5 }) => {
   
   const [showSkills, setShowSkills] = useState(true)
   const [modalCalculoSkills, setModalCalculoSkills] = useState(false)

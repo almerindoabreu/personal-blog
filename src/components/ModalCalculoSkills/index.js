@@ -7,7 +7,7 @@ const ModalCalculoSkills = () => {
     return (
         <S.ModalCalculoSkillsWrapper>
             <S.ModalCalculoSkillsTitle>
-                Fórmula do Cálculo  de Experiência de Skills
+                Fórmula do Cálculo de Experiência de Skills
             </S.ModalCalculoSkillsTitle>
             <S.ModalCalculoSkillsDescription>
                 O cálculo realizado para definir a quantidade de experiência não é baseado em nenhuma métrica científica ou teórica,

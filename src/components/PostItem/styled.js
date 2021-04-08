@@ -12,9 +12,11 @@ export const PostItemWrapper = styled.div`
   flex-wrap: wrap;
   padding: 4rem 0 0 0;
   
-  ${media.lessThan("650px")`
-    padding: 1rem 0 0 0;
+  ${media.lessThan("1150px")`
+    max-width: 500px;
+    margin: auto;
   `}
+
 
 `
 
@@ -33,15 +35,26 @@ export const PostItem = styled.div`
 
 
   ${media.greaterThan("1800px")`
-    width: 50%;
+    width: 45%;
   `}
 
-  ${media.lessThan("1320px")`
+  ${media.lessThan("1150px")`
     width: 100%;
   `}
 
   ${media.lessThan("900px")`
     width: 100%;
+  `}
+
+  
+  ${media.lessThan("750px")`
+    min-height: 300px;
+    margin: 8px
+  `}
+
+  ${media.lessThan("650px")`
+    min-height: 300px;
+    margin: 5px
   `}
 
 `
@@ -52,6 +65,14 @@ export const PostLink = styled(AniLink)`
   height: 100%;
 
   padding: 28px;
+
+  ${media.lessThan("750px")`
+    padding: 15px
+  `}
+
+  ${media.lessThan("650px")`
+    padding: 15px
+  `}
 
   
   &.hover_effect:hover div {
@@ -127,6 +148,14 @@ export const PostItemTitle = styled.text`
   ${media.lessThan("1000px")`
     font-size: 24px;
   `}
+
+  ${media.lessThan("750px")`
+    font-size: 18px;
+  `}
+
+  ${media.lessThan("650px")`
+  font-size: 18px;
+  `}
 `
 
 export const PostItemGroup = styled.div`
@@ -142,7 +171,6 @@ export const PostItemGroup = styled.div`
 
   ${media.lessThan("650px")`
     padding: 0px;
-    margin: 12px 0px;
   `}
 `
 
@@ -156,6 +184,14 @@ export const PostItemSubTitle = styled.text`
   ${media.lessThan("1000px")`
     font-size: 16px;
   `}
+
+  ${media.lessThan("750px")`
+    font-size: 14px;
+  `}
+
+  ${media.lessThan("650px")`
+  font-size: 14px;
+  `}
 `
 
 export const PostItemImage = styled.div`
@@ -165,14 +201,18 @@ export const PostItemImage = styled.div`
   margin: 5px 0px;
 
   width: 100%;
-  height: 200px;
+  max-height: 200px;
   overflow: hidden;
 
   border: solid .5px #999;
   border-radius: 10px;
 
+  ${media.lessThan("750px")`
+    max-height: 150px;
+  `}
+
   ${media.lessThan("650px")`
-    padding: 0px;
+  max-height: 150px;
   `}
 `
 

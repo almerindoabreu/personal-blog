@@ -7,13 +7,10 @@ import { Menu } from "@styled-icons/entypo/Menu"
 export const NavbarMobileWrapper = styled.div`
   display: none;
   padding: 0.5rem 1rem;
-  position: fixed;
-  width: 100%;
   background-color: var(--background);
   flex-direction: row;
-  ${media.lessThan("530px")`
+  ${media.lessThan("750px")`
     display: ${props => (props.mode === "small" ? "flex" : "none")};
-    z-index: 9999;
   `}
 `
 
@@ -36,6 +33,7 @@ export const NavbarMobileMenu = styled.div`
   flex-direction: column;
   padding: 0rem 1rem 1rem 1rem;
   transition: 0.3s;
+  width: 100%;
 `
 
 export const NavbarMobileLinkList = styled.ul`
