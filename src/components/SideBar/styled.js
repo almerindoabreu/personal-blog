@@ -3,8 +3,7 @@ import media from "styled-media-query"
 
 export const SideBarWrapper = styled.aside`
   align-items: center;
-  border-right: 1px solid;
-  background: #16202c;
+  background: var(--background);
   display: flex;
 
   flex-direction: column;
@@ -15,12 +14,16 @@ export const SideBarWrapper = styled.aside`
   text-align: center;
   width: 20rem;
 
-  ${media.lessThan("830px")`
+  ${media.lessThan("920px")`
     margin-top: 2rem;
   `}
 
+  ${media.lessThan("750px")`
+    display: none;
+    `}
+
   ${media.lessThan("650px")`
-    display: ${props => (props.isPost === true ? "none" : "flex")};
+    display: none;
     margin-top: 2rem;
     padding-bottom: 0rem;
     height: auto;

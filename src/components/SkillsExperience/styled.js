@@ -3,11 +3,12 @@ import { HelpWithCircle } from "@styled-icons/entypo/HelpWithCircle"
 import { ChevronBottom } from "@styled-icons/open-iconic/ChevronBottom"
 import { ChevronTop } from "@styled-icons/open-iconic/ChevronTop"
 import media from "styled-media-query"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const WrapperSkillsExperience = styled.div`
   display: flex;
   flex-direction: column;
-  background: #16202c;
+  background: var(--background);
   width: 100%;
 `
 
@@ -26,7 +27,7 @@ export const TitleWrapper = styled.div`
 export const SkillsExperienceShowMobile = styled.a`
   display: none;
   margin-top: 5px;
-  color: #fff;
+  color: var(--texts);
   height: 15px;
   width: 15px;
 
@@ -53,7 +54,7 @@ export const HelpSkillsCountLink = styled.a`
 
 export const HelpSkillsCountIcon = styled(HelpWithCircle)`
   margin-top: 5px;
-  color: #fff;
+  color: var(--texts);
   height: 15px;
   width: 15px;
 
@@ -93,12 +94,12 @@ export const SkillsLabelWrapper = styled.div`
 `
 
 export const SkillLabel = styled.label`
-  color: #fff;
+  color: var(--texts);
   font-size: 0.9rem;
 `
 
 export const SkillBar = styled.div`
-  background-color: #fff;
+  background-color: var(--texts);
   width: ${props => props.experiencePorcent}%;
   height: 10px;
 `
@@ -108,7 +109,7 @@ export const MoreSkills = styled.div`
   text-align: right;
 `
 
-export const MoreSkillsLink = styled.a`
+export const MoreSkillsLink = styled(AniLink)`
   color: #42a5f5;
   font-size: 0.9rem;
   text-decoration: none;

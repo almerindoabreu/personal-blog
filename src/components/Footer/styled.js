@@ -8,7 +8,7 @@ export const FooterWrapper = styled.div`
 `
 
 export const FooterCopyRight = styled.text`
-  color: #fff;
+  color: var(--texts);
   font-size: 0.8rem;
   margin: 0.8rem;
 `

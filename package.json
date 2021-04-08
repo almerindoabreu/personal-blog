@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "almerindo-blog-portifolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A blog to post about tecnologies contents and projects that I contribute.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Almerindo Abreu <almerindoabreu@gmail.com>",
   "dependencies": {
-    "algoliasearch": "^3.27.1",
+    "algoliasearch": "^3.35.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
@@ -24,6 +24,7 @@
     "gatsby-source-instance-name-for-remark": "^0.1.1",
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.4.3",
+    "gsap": "^3.6.1",
     "lazysizes": "^5.2.0",
     "prismjs": "^1.20.0",
     "prop-types": "^15.7.2",

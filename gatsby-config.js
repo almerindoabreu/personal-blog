@@ -1,10 +1,11 @@
 require("dotenv").config()
+
 const queries = require("./src/utils/algolia_queries")
 
 module.exports = {
   siteMetadata: {
     title: `Blog - Almerindo Abreu`,
-    description: `Este blog é um ambiente na qual irei postar artigos sobre conteúdos dos quais estarei estudando e projetos que estarei trabalhando. A idéia é propor reflexão sobre esses temas e aprendizado para as pessoas que tiverem interesse.`,
+    description: `Um blog pessoal com ideias, projetos, artigos, e opiniões sobre tecnologia e outras coisas aliatórias.`,
     author: `@almerindoabreu`,
   },
   plugins: [
@@ -91,9 +92,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#16202C`,
+        theme_color: `#16202C`,
         display: `minimal-ui`,
+        icon: `src/images/blog-logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

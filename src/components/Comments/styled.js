@@ -5,6 +5,7 @@ export const CommentsWrapper = styled.section`
   margin: auto;
   max-width: 70rem;
   padding: 3rem 6.4rem 3rem;
+  color: var(--texts) !important;
 
   ${media.lessThan("830px")`
     padding: 3rem 2.5rem 3rem;
@@ -16,6 +17,7 @@ export const CommentsWrapper = styled.section`
   
   iframe[src*="ads-iframe"] {
     display: none;
+    color: var(--texts) !important;
   }
   #disqus_thread {
     a {
@@ -25,7 +27,7 @@ export const CommentsWrapper = styled.section`
 `
 
 export const CommentsTitle = styled.h2`
-  color: #fff;
+  color: var(--texts);
   font-size: 2.1rem;
   font-weight: 700;
   padding-bottom: 2rem;

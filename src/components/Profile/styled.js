@@ -2,7 +2,7 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const ProfileWrapper = styled.section`
-  color: #fff;
+  color: var(--texts);;
 
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ export const ProfileTitle = styled.small`
   display: block;
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   ${media.lessThan("medium")`
     font-size: 0.8rem;

@@ -16,8 +16,8 @@ const links = [
     label: "Projetos",
   },
   {
-    url: "/search",
-    label: "Pesquisar",
+    url: "/about",
+    label: "Sobre mim",
   },
 ]
 

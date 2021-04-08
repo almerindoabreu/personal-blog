@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
-
+import getThemeColor from "../../utils/getThemeColor"
 
 import ModalCalculoSkills from "../ModalCalculoSkills"
-import ModalExtratoSkill from "../ModalExtratoSkill"
 import Modal from "../Modal"
 
 import * as S from "./styled"
 
-const SkillsExperience = ({ moreSkillsLink = true, countLine = 6 }) => {
+const SkillsExperience = ({ moreSkillsLink = true, countLine = 5 }) => {
   
   const [showSkills, setShowSkills] = useState(true)
   const [modalCalculoSkills, setModalCalculoSkills] = useState(false)
@@ -177,7 +176,13 @@ const SkillsExperience = ({ moreSkillsLink = true, countLine = 6 }) => {
         )}
       </S.WrapperSkillsItens>
       <S.MoreSkills show={(showSkills && moreSkillsLink) == true ? "visible" : "hidden"}>
-        <S.MoreSkillsLink href="/moreSkills" alt="Mais skills">
+        <S.MoreSkillsLink 
+          to="/moreSkills"
+          cover
+          direction="down"
+          bg={getThemeColor()}
+          duration={0.6}
+        >
           Mais Skills ...
         </S.MoreSkillsLink>
       </S.MoreSkills>

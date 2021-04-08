@@ -2,12 +2,11 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import media from "styled-media-query"
 
-export const AvatarWrapper = styled(Img)`
+export const AvatarWrapper = styled.div`
   border-radius: 50%;
   margin: auto;
-  height: 3.75rem;
-  width: 3.75rem;
-  z-index: 0;
+  height: 100px;
+  width: 100px;
   ${media.lessThan("medium")`
     height: 1.875rem;
     width: 1.875rem;

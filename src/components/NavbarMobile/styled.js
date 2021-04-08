@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Link from "gatsby-plugin-transition-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 
 import { Menu } from "@styled-icons/entypo/Menu"
@@ -7,20 +7,17 @@ import { Menu } from "@styled-icons/entypo/Menu"
 export const NavbarMobileWrapper = styled.div`
   display: none;
   padding: 0.5rem 1rem;
-  position: fixed;
-  width: 100%;
-  background-color: #16202c;
+  background-color: var(--background);
   flex-direction: row;
-  ${media.lessThan("530px")`
+  ${media.lessThan("750px")`
     display: ${props => (props.mode === "small" ? "flex" : "none")};
-    z-index: 9999;
   `}
 `
 
 export const NavbarMobile = styled.nav``
 
 export const NavbarMobileIconWrapper = styled.button`
-  background-color: #16202c;
+  background-color: var(--background);
   border: none;
   cursor: pointer;
 `
@@ -28,7 +25,7 @@ export const NavbarMobileIconWrapper = styled.button`
 export const NavbarMobileIcon = styled(Menu)`
   width: 30px;
   height: 30px;
-  color: #fff;
+  color: var(--texts);;
 `
 
 export const NavbarMobileMenu = styled.div`
@@ -36,6 +33,7 @@ export const NavbarMobileMenu = styled.div`
   flex-direction: column;
   padding: 0rem 1rem 1rem 1rem;
   transition: 0.3s;
+  width: 100%;
 `
 
 export const NavbarMobileLinkList = styled.ul`
@@ -44,16 +42,16 @@ export const NavbarMobileLinkList = styled.ul`
 `
 
 export const NavbarMobileItem = styled.li`
-  color: #fff;
+  color: var(--texts);
 
   .active {
     border-bottom: #42a5f5 solid 3px;
   }
 `
 
-export const NavbarMobileLink = styled(Link)`
+export const NavbarMobileLink = styled(AniLink)`
   text-decoration: none;
-  color: #fff;
+  color: var(--texts);
   cursor: pointer;
   transition: 0.3s;
   &:hover {

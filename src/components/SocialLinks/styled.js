@@ -2,7 +2,7 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const WrapperSocialLinks = styled.nav`
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   width: 100%;
 
   ${media.lessThan("medium")`
@@ -20,7 +20,7 @@ export const SocialLinksList = styled.ul`
 export const SocialLinksItem = styled.li``
 
 export const SocialLinksLink = styled.a`
-  color: #fff;
+  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
 `
