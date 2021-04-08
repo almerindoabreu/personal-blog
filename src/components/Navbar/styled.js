@@ -8,19 +8,34 @@ export const NavBarWrapper = styled.nav`
   justify-content: space-between;
   width: 100%;
   z-index: 10;
-  padding-right: 50px;
+  padding-left: 320px;
+  margin: auto;
   top: 0;
   position: fixed;
   background-color: var(--background);
 
-  ${media.lessThan("830px")`
-    display: ${props => (props.mode === "small" ? "flex" : "none")};
-    width: 100%;
+  
+
+  ${media.lessThan("975px")`
+    padding-right: 40px;
   `}
 
-  ${media.lessThan("530px")`
-    display: none;
+  ${media.lessThan("965px")`
+    padding-right: 30px;
   `}
+
+  ${media.lessThan("955px")`
+    padding-right: 10px;
+  `}
+
+  ${media.lessThan("920px")`
+    padding-left: 0px;
+    z-index: 500;
+  `}
+
+  ${media.lessThan("750px")`
+    display: none;
+    `}
 `
 
 export const NavBarGroup = styled.div`
@@ -30,15 +45,15 @@ export const NavBarGroup = styled.div`
   margin-right: 1rem;
 
   ${media.lessThan("large")`
-    margin: 0.8rem 3rem 0.8rem auto;
+    margin: 0.8rem 2.5rem 0.8rem auto;
   `}
 
   ${media.lessThan("975px")`
-    margin: 0.8rem 2.5rem 0.8rem 3.5rem;
+    margin: 0.8rem 0rem 0.8rem auto;
   `}
 
   ${media.lessThan("910px")`
-    margin: 0.8rem auto 0.8rem 0rem;
+    margin: 0.8rem 1rem 0.8rem 0rem;
   `}
 
   ${media.lessThan("medium")`

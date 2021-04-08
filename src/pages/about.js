@@ -3,11 +3,15 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const AboutPage = () => {
+  
+  return(
   <Layout>
-    <SEO title="About" />
-    <h1>About</h1>
-  </Layout>
-)
+    <SEO title="Sobre mim" />
 
+  </Layout>
+
+);
+
+}
 export default AboutPage
