@@ -3,6 +3,8 @@ import media from "styled-media-query"
 import Day from "../../icons/DayIcon.js";
 import Night from "../../icons/NightIcon.js";
 
+import { LightbulbFill as Light } from "@styled-icons/bootstrap/LightbulbFill";
+
 export const NightModeWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -18,23 +20,15 @@ export const IconWrapper = styled.a`
   cursor: pointer;
 `
 
-export const IconDayWrapper = styled.div`
-  display: "block";
-  & svg{
-    fill: ${props => (props.active == true ? "#FEC01C" : "#C4C4C4")}; 
-  } 
-`
-export const IconDay = styled(Day)`
+export const IconNight = styled(Light)`
  
 `
 export const IconNightWrapper = styled.div`
   display: "block";
   margin-top: 4px;
+  height: 25px;
+  width: 25px;
   & svg{
-    fill: ${props => (props.active == true ? "#3DA5F5" : "#C4C4C4")}; 
+    fill: ${props => (props.active == false ? "#3DA5F5" : "#C4C4C4")}; 
   } 
-`
-
-export const IconNight = styled(Night)`
- 
 `
