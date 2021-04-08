@@ -21,11 +21,10 @@ const Avatar = ({isDarkMode}) => {
   }, [isDarkMode])
 
   return (
-    <S.AvatarWrapper id="avatar-logo">
+    <S.AvatarWrapper>
       {isDarkMode ? 
         <AvatarNight /> :
         (alreadyDay > 0 ? <AvatarAlreadyDay /> : <AvatarDay />)
-        
       }
     </S.AvatarWrapper>
   );
