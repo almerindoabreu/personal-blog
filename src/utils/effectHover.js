@@ -1,4 +1,5 @@
 function effectHover() {
+  if (typeof document !== 'undefined'){
   const elements = document.querySelectorAll(".hover_effect");
   const elementsSpan = [];
 
@@ -19,7 +20,7 @@ function effectHover() {
       elementsSpan[index].style.top = e.pageY - element.offsetTop + "px";
     });
   });
-
+}
 }
 
 export default effectHover;
