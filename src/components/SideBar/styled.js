@@ -10,7 +10,7 @@ export const SideBarWrapper = styled.aside`
   height: 100vh;
   position: fixed;
   z-index: 200;
-  padding: 2rem;
+  padding: 0px 2rem 2rem 2rem;
   text-align: center;
   width: 20rem;
 
