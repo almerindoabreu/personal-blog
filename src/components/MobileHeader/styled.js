@@ -17,7 +17,7 @@ export const WrapperMobileHeader = styled.div`
 
     z-index: 0;
 
-    border-top: solid 1px var(--border);
+    border-bottom: solid 1px var(--borders);
     background: var(--background);
   `}
   

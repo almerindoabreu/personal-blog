@@ -20,7 +20,7 @@ export const SideBarWrapper = styled.aside`
 
   ${media.lessThan("750px")`
     display: none;
-    `}
+  `}
 
   ${media.lessThan("650px")`
     display: none;

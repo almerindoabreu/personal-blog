@@ -2,7 +2,6 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const MoreSkillsWrapper = styled.div`
-    height: 92vh;
     margin-top: 2rem;
     padding: 2rem;
 
@@ -15,7 +14,7 @@ export const MoreSkillsWrapper = styled.div`
 
     ${media.lessThan("650px")`
         flex-direction: column;
-        padding: 1rem;
+        padding: 2rem;
     `}
 `
 

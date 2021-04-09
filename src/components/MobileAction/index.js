@@ -26,10 +26,18 @@ const MobileAction = ({nightMode, setNightMode}) => (
               <S.IconWrapper>
                 <Icon />
               </S.IconWrapper>
+              <S.MobileActionLabel>
+                {link.legend}
+                </S.MobileActionLabel>
             </S.MobileActionLink>
         )
       })}
-      <NightMode isDarkMode={nightMode} setNightMode={setNightMode}/>
+      <S.IconNightModeWrapper>
+        <NightMode isDarkMode={nightMode} setNightMode={setNightMode}/>
+        <S.MobileActionLabel>
+        {"Tema"}
+        </S.MobileActionLabel>
+      </S.IconNightModeWrapper>
     </S.MobileActionGroup>
   </S.WrapperMobileAction>
 )

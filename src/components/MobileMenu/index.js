@@ -17,10 +17,11 @@ const MobileMenu = ({isOpenedMobileMenu, setIsOpenedMobileMenu}) => {
           <S.MobileMenuNavLink
             activeClassName="active"
             to={link.url}
+            onClick={() => setIsOpenedMobileMenu(!isOpenedMobileMenu)}
             cover
-            direction="down"
+            direction="up"
             bg={getThemeColor()}
-            duration={0.6}>
+            duration={1.4}>
               {link.label}
           </S.MobileMenuNavLink>
         </S.MobileMenuNavItem>
