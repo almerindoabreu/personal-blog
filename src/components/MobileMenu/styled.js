@@ -5,21 +5,24 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 export const WrapperMobileMenu = styled.div`
   display: none;
 
+  height: 100vh;
+    width: 20rem;
+
   ${media.lessThan("750px")`
     display: flex;
     flex-direction: column;
 
     align-items: center;
     text-align: center;
-
-    height: 100vh;
-    width: 100vw;
+    height: calc(100% - 50px);
+    position: inherit;
+    width: 100%;
 
     background: var(--background);
     transition: 0.5s;
     
     transform: ${props =>
-      props.isOpenedMobileMenu ? 'translateX(0)' : 'translateX(-100vw)'};
+      props.isOpenedMobileMenu ? 'translateY(0)' : 'translateY(-100vh)'};
   `}
   
 
@@ -27,7 +30,7 @@ export const WrapperMobileMenu = styled.div`
 export const WrapperMobileMenuNav = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 20%;
+  margin: 90px;
 
 
   width: 100%;
