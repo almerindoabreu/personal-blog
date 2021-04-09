@@ -36,7 +36,6 @@ const SkillsExperience = ({ moreSkillsLink = true, countLine = 5 }) => {
  
   useEffect(() => {
     const verifySizeOfScreen = () => {
-      if (window.innerWidth <= 550) setShowSkills(false)
       if (window.innerHeight >= 900) setCountLineSkills(countLine > 12 ? countLine : 12);
     }
     getSkills(contents);
