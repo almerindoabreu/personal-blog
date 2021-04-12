@@ -63,6 +63,7 @@ export const PostLink = styled(AniLink)`
   text-decoration: none;
   color: var(--texts);
   height: 100%;
+  width: 100%;
 
   padding: 28px;
 
@@ -222,7 +223,7 @@ export const PostItemMainImage = styled.img`
     -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
     transform: translateZ(0);
 
-  
+    width: 100%;
 
   ${media.lessThan("900px")`
   `}

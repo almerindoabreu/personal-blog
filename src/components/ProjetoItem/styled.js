@@ -7,6 +7,7 @@ export const ProjetoItemWrapper = styled.div`
   flex-direction: column;
   padding: 4rem 0 0 0;
 
+
   ${media.lessThan("650px")`
     padding: 2rem 0 0 0;
   `}
@@ -277,4 +278,5 @@ export const ProjetoLink = styled.a`
   color: #42a5f5;
   font-size: 0.9rem;
   text-decoration: none;
+
 `

@@ -59,7 +59,6 @@ const GlobalStyles = createGlobalStyle`
   }
   img {
     display: block;
-  	width: 100%;
   	height: auto;
   }
   body.dark {
