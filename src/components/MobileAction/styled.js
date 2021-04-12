@@ -43,6 +43,7 @@ export const MobileActionLabel = styled.div`
   flex-direction: column;
   color: var(--texts);
   font-size: 12px;
+  align-items: center;
 `
 
 export const IconNightModeWrapper = styled.div`
@@ -55,6 +56,7 @@ export const IconNightModeWrapper = styled.div`
   & div{
     margin-top: 0px;
     margin-right: 0px;
+    margin-left: 3px !important;
   }
 `
 
