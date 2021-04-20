@@ -14,7 +14,7 @@ export const MoreSkillsWrapper = styled.div`
 
     ${media.lessThan("650px")`
         flex-direction: column;
-        padding: 2rem;
+        padding: 2rem 0rem;
     `}
 `
 
@@ -27,26 +27,37 @@ export const MoreSkillsGroup = styled.div`
 `
 
 export const MoreSkillsTitle = styled.h1`
-    text-align: left;
-    font-weight: 600;
     color: #42a5f5;
     font-size: 1.4rem;
 
-    ${media.lessThan("medium")`
-        font-size: 1.0rem;
+    font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem auto;
+
+  ${media.lessThan("830px")`
+      font-size: 3rem;
     `}
+
+  ${media.lessThan("650px")`
+    font-size: 1.4rem;
+    padding: 0 0rem;
+  `}
 `
 
 export const MoreSkillsText = styled.p`
-    font-weight: 600;
-    margin: 1.5rem 0px 0.5rem;
-    color: var(--texts);
-
-    text-align: left;
+margin: 2rem 0rem;
+color: var(--texts);
+    font-size: 1.25rem;
     font-weight: 300;
-    
+    line-height: 1.7;
+    letter-spacing: 0.069rem;
 
-    ${media.lessThan("medium")`
-        font-size: 1.0rem;;
+    ${media.lessThan("830px")`
+      font-size: 1rem;
     `}
+
+    ${media.lessThan("650px")`
+      font-size: 1rem;
+    `}
+    
 `
