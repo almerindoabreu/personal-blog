@@ -5,7 +5,7 @@ import media from "styled-media-query"
 export const ProjetoItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 4rem 0 0 0;
+  padding: 4rem 2rem 0px 2rem;
 
 
   ${media.lessThan("650px")`

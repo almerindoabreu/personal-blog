@@ -11,11 +11,20 @@ export const PostItemWrapper = styled.div`
 
   flex-wrap: wrap;
   padding: 4rem 0 0 0;
-  
-  ${media.lessThan("1150px")`
-    max-width: 500px;
-    margin: auto;
+
+  margin: auto;
+  max-width: 80rem;
+  padding: 4rem 0rem;
+
+  ${media.lessThan("830px")`
+    padding: 2rem 2rem 0;
   `}
+
+  ${media.lessThan("650px")`
+    padding: 2rem 0rem 0;
+  `}
+  
+
 
 
 `

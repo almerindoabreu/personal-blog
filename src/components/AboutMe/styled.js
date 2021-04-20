@@ -19,17 +19,18 @@ export const AboutMe = styled.div`
 `
 
 export const AboutMeDescription = styled.section`
+  color: var(--texts);
+  margin: auto;
   max-width: 70rem;
-  padding: 2rem 0rem;
+  padding: 3rem 5rem 0;
 
   ${media.lessThan("830px")`
-    padding: 2rem 0rem;
+    padding: 3rem 2rem 0;
   `}
 
   ${media.lessThan("650px")`
-    padding: 1rem 1rem;
+    padding: 1rem 0rem 0;
   `}
-
   p,
   h1,
   h2,
