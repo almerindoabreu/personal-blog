@@ -1,5 +1,5 @@
 ---
-date: 2020-05-10 08:00:00
+date: 2021-04-02 08:00:00
 title: Cheat Sheet Gitflow
 description: Consulte rapidamente os comandos do Git e Gitflow para utilização do workflow Gitflow.
 background: "#7AAB13"

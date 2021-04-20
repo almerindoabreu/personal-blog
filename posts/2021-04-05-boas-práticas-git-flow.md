@@ -1,5 +1,5 @@
 ---
-date: 2020-05-10 08:00:00
+date: 2021-04-10 08:00:00
 title: "Gitflow: O modelo de trabalho orientado à branches"
 description: Com mais de 10 anos da publicação do Gitflow o modelo ainda é extremamente eficiente como fluxo de trabalho em diversos tipos de projetos de software.
 background: "#7AAB13"
