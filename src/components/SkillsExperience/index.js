@@ -18,7 +18,7 @@ const SkillsExperience = ({ moreSkillsLink = true, countLine = 5 }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "(posts|projects)/.*.md$/"}}) {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(posts|projects)/.*.md$/"}}) {
         edges {
           node {
             id
