@@ -10,8 +10,7 @@ const MoreSkills = () => {
             <S.MoreSkillsGroup>
                 <S.MoreSkillsTitle>Todas as Skills Apresentada no Blog</S.MoreSkillsTitle>
                 <S.MoreSkillsText>
-                    O cálculo realizado para definir a quantidade de experiência não é baseado em nenhuma métrica científica ou teórica,
-                    é apenas uma forma de visualizar o quanto de conteúdo referente a determinado assunto esse website aborda.
+                O cálculo realizado para definir a quantidade de experiência não é baseado em nenhuma métrica científica ou algo do tipo, é apenas uma forma gamificada de visualizar o quanto de conteúdo referente a determinado assunto esse website aborda.
                 </S.MoreSkillsText>
                 <S.MoreSkillsText>
                     • Cheat Sheet = 20 exp.
