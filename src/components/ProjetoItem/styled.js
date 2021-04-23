@@ -9,7 +9,7 @@ export const ProjetoItemWrapper = styled.div`
 
 
   ${media.lessThan("650px")`
-    padding: 2rem 0 0 0;
+    padding: 3rem 0 0 0;
   `}
 `
 

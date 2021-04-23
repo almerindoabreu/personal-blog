@@ -21,7 +21,7 @@ export const PostItemWrapper = styled.div`
   `}
 
   ${media.lessThan("650px")`
-    padding: 2rem 0rem 0;
+    padding: 4rem 0 0 0;
   `}
   
 
