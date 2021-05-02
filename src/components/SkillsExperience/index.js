@@ -94,7 +94,7 @@ const SkillsExperience = ({ moreSkillsLink = true, countLine = 5 }) => {
     switch (category) {
       case "Artigo":
         return 25;
-      case "CheatSheet":
+      case "Cheat Sheet":
         return 20;
       case "Projeto":
         return 50;
