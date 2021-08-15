@@ -8,9 +8,7 @@ keyWords: Website, Responsividade, Dispositivo Móvel
 image: "/assets/img/website-3374825_1920.jpg"
 ---
 
-Oooopa, Beleza?!
-
-Essa é rápida Mirindo...
+Opa, beleza?!
 
 Hoje em dia temos diversos tipos de dispositivos de tamanhos variados, portanto é indispensável para um sistema, site, blog, para qualquer ambiente web de modo geral, a utlização de responsividade para adequar a estes diversos tamanhos de telas.
 

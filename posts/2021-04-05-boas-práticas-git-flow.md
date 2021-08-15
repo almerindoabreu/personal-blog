@@ -22,7 +22,7 @@ Boas práticas, como um todo, é extremamente importante para trabalhar em um ti
 
 ## O que é Git, e quais foram as dores que esse gerenciador de código veio para solucionar?
 
-O Git é um sistema de controle de versão distribuído muito eficiente desde os pequenos até os grandes projetos, e tudo isso com muita eficiência e performance.
+O Git é um sistema de controle de versão distribuído smuito eficiente desde os pequenos até os grandes projetos, e tudo isso com muita eficiência e performance.
 
 A capacidade de ser distribuído traz a possibilidade dos usuários possuírem uma cópia completa localmente do repositório, podendo trabalhar offline, porém é óbvio que para compartilhar alterações haverá a necessidade da internet.
 
