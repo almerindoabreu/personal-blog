@@ -8,7 +8,7 @@ const Profile = ({isDarkMode}) => (
     <S.ProfileAuthor>Almerindo Abreu</S.ProfileAuthor>
     <S.ProfileTitle>Eng. de Computação</S.ProfileTitle>
     <S.ProfileDescription>
-      Desenvolvedor full stack, e escritor desse espaço que chamo de blog
+      Desenvolvedor full-stack, e escritor desse espaço que chamo de blog
     </S.ProfileDescription>
   </S.ProfileWrapper>
 )

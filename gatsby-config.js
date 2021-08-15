@@ -8,19 +8,26 @@ module.exports = {
     description: `Um blog pessoal com ideias, projetos, artigos, e opiniões sobre tecnologia e outras coisas aliatórias.`,
     author: `@almerindoabreu`,
   },
-      plugins: [
-        {
-          resolve: `gatsby-plugin-google-adsense`,
-          options: {
-            publisherId: `ca-pub-8660438201017030`
-          },
-        },
-    ],
   plugins: [
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     // needs to be the first to work with gatsby-remark-images
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-204946678-1",
+        // this option places the tracking script into the head of the DOM
+        head: true,
+        // other options
+        },
+      },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-8660438201017030`
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
