@@ -1,6 +1,6 @@
 ---
 date: 2021-04-19 21:00:00
-title: "Por que criei um este espaço?"
+title: "Por que criei este espaço?"
 description: "Motivações, organização dos conteúdos e vontade de escrever: Os principais pontos que me fez criar este blog."
 background: "#7AAB13"
 category: Artigo
