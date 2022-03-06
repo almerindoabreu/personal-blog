@@ -5,7 +5,7 @@ description: "Motivações, organização dos conteúdos e vontade de escrever: 
 background: "#7AAB13"
 category: Artigo
 keyWords: Website, Blog, Site pessoal
-image: "/assets/img/site-pessoal.PNG"
+image: "/assets/img/site-pessoal.png"
 ---
 
 A minha motivação atual em ter um site envolve três principais pontos, que são, aprender mais e de forma consolidada através de reflexões e auto critica sobre alguns assuntos, revisitar meus pontos de vista em momentos futuros, e organizar meu portfólio de projetos.
